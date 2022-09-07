@@ -1,4 +1,0 @@
-repository "Random Towers 3D@Sir_Dark_Fox@cloud"
-  path "/"
-    br "/main"
-    co "/main"
