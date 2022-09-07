@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6690384787073295701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6690384787073295703}
+  - component: {fileID: 6690384787073295700}
+  - component: {fileID: 4627199974340282418}
+  - component: {fileID: 8622547260032815168}
+  - component: {fileID: 1158591105}
+  m_Layer: 0
+  m_Name: GameManagement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6690384787073295703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6690384787073295701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.321927, y: -3.0023115, z: -2.7689223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6690384787073295700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6690384787073295701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb7912200a2fbe4481f3a7a63d3af28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towersDrawOverlay: {fileID: 0}
+  nodeOverlay: {fileID: 0}
+  towerOverlay: {fileID: 0}
+--- !u!114 &4627199974340282418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6690384787073295701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2583938e5fe20324f94a82c8fa34261b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveCountdown: 5
+  spawnCountdown: 1
+  waveEnemyCount: 5
+  maxTypes: 1
+  startDifficulty: 0
+  waypointPrefab: {fileID: 97780014763816889, guid: 99c79941d8922b1488eb938798a4b5e1, type: 3}
+  enemyEasyPrefabs:
+  - {fileID: 5902840560180521976, guid: 99acde7c6cde9fc469f2e91344e86e37, type: 3}
+  enemyNormalPrefabs: []
+  enemyHardPrefabs: []
+  waveCountdownText: {fileID: 0}
+  wavesPassed: 0
+  paths: {fileID: 0}
+  currentWaveCountdown: 0
+--- !u!114 &8622547260032815168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6690384787073295701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb52648919bd47042a21705d9407b7f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToPool:
+  - {fileID: 4900943427793048904, guid: 702b2b0f423a39c4080b9f7a66d285e9, type: 3}
+  - {fileID: 3292771981334952416, guid: f008e9dd90395024db8a6b8bd1f5aec4, type: 3}
+  - {fileID: 5362064131621499064, guid: 1f3d575da27c57940ae050a6442701b9, type: 3}
+  - {fileID: 786301419012427806, guid: 258dceecf799f814e83b957bd6ec5047, type: 3}
+  - {fileID: 8730504650977304794, guid: d0f64ed90a297bb4895479830cbc803f, type: 3}
+  - {fileID: 2440076092632216066, guid: 8900c963b0f1a65489fc738f3da5b209, type: 3}
+  - {fileID: 5267961361156642028, guid: 17c42e207033a9b4b9fdb59c08aa0cf9, type: 3}
+  - {fileID: 5902840560180521976, guid: 99acde7c6cde9fc469f2e91344e86e37, type: 3}
+  - {fileID: 2658311140867882343, guid: 26f557d790c12574fa22a627b48a5c6b, type: 3}
+  - {fileID: 2658311140867882343, guid: bb03fe12bb168014db223da01bc740c6, type: 3}
+--- !u!114 &1158591105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6690384787073295701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c1a656691ad4e4b8c0f6727f8b2f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCoins: 1000
+  startLives: 999
